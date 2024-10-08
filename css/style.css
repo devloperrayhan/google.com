@@ -255,6 +255,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li,div,input,textarea,button,select,option,figure,
 body{
   background-color: #1d212b;
   /* background-image: url("../img/Admin-4.jpg"); */
+  /* backdrop-filter: blur(3px) grayscale(80%); */
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position: center; */
