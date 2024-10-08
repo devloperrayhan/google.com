@@ -1,0 +1,548 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+h1,h2,h3,h4,h5,h6,p,a,span,ul,li,div,input,textarea,button,select,option,figure,figcaption,blockquote,pre,code,hr,img,video,iframe,main,nav,section,header,footer,address,section{
+    font-family: "Roboto", system-ui;
+    font-style: normal;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #1d212b;
+  /* background-image: url("../img/Admin-4.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-attachment: fixed;
+  color: #FFF;
+  font-family: "Roboto", system-ui;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.profile{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.profile a{
+   text-decoration: none;
+   color: #FFF;
+   font-size: 15px;
+   margin-right: 15px;
+   font-weight: 500;
+   margin-left: 7px;
+}
+.profile a img{
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
+  border: 5px solid #353535;
+}
+.profile :nth-child(3){
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 0px 5px 0px 6px;
+}
+.profile :nth-child(4){
+  margin-top: 5px;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 4px 5px 0px 6px;
+}
+.Underline:hover{
+  text-decoration: underline 2px solid #FFF;
+  text-underline-offset: 2px;
+}
+.profile :nth-child(3):hover{
+  box-shadow: 0px 0px 0px 6px #51515192;
+  text-decoration: none !important;
+  background-color: #51515192;
+}
+.profile :nth-child(4):hover{  
+  box-shadow: 0px 0px 0px 6px #51515192;
+  text-decoration: none !important;
+  background-color: #51515192;
+}
+.Google{
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Google h1{
+  text-align: center;
+  color: #FFF;
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.input{
+  text-align: center;
+}
+#search{
+  height: 50px;
+  width: 40vw;
+  border-radius: 30px;
+  border: none;
+  padding-left: 50px;
+  font-size: 20px;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #1d212b;
+  border: 1px solid #616161;
+  color: #FFF;
+}
+#search:focus{
+  background-color: #303134;
+}
+#search:hover{
+  background-color: #303134;
+}
+.search button{
+  height: 35px;
+  width: 140px;
+  border: none;
+  border-radius: 3px;
+  background-color: #303134;
+  color: #FFF;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+.Lucky{
+  text-decoration: none;
+  color: #FFF;
+  margin-left: 10px;
+  margin-right: 10px; 
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #303134;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 8px 15px 8px 15px;
+  cursor: pointer;
+}
+.Google-Icon{
+  height: 130px;
+}
+.lens img{
+  height: 25px;
+}
+.voice img{
+  height: 25px;
+}
+.search_box{
+  position: relative;
+  display: inline-block;
+}
+.search{
+  text-align: center;
+}
+.search_icon{
+  position: absolute;
+  top: 33px;
+  right: 30px;
+}
+.lens{
+  margin-right: 10px;
+}
+._icon{
+  position: absolute;
+  top: 35px;
+  left: 18px;
+}
+._icon img{
+  height: 25px;
+}
+.search span a{
+  color: #99c3ff;
+  text-decoration: none;
+}
+.search span a:hover{
+  text-decoration: underline;
+}
+.search span{
+  color: #FFF;
+  display: inline-block;
+  margin-bottom: 14.8%;
+}
+.search button:hover,
+.Lucky:hover{
+  border: 1px solid #565656;
+}
+footer{
+  background-color: #171717;
+  color: #FFF;
+  padding: 10px 0px 10px 0px;
+  font-size: 15px;
+  border-bottom: 1px solid #565656;
+}
+footer p{
+  margin-left: 20px;
+}
+.main_footer{
+  background-color: #171717;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 20px 0px;
+  font-size: 15px;
+}
+.left a{
+  margin-left: 20px;
+  color: #FFF;
+  text-decoration: none;
+}
+.right{
+  margin-right: 20px;
+}
+.right a{
+  margin-left: 20px;
+  color: #FFF;
+  text-decoration: none;
+}
+.right a:hover,
+.left a:hover{
+  text-decoration: underline;
+}
+@media screen and (min-width: 2560px) {
+  .search span{
+    margin-bottom: 17.8%;
+  }
+  .profile{
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 1440px){
+  .search span{
+    margin-bottom: 14.8%;
+  }
+  .profile{
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .search span{
+    margin-bottom: 20.8%;
+  }
+  #search{
+    width: 60vw;
+  }
+  .profile{
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 768px){
+  .search span{
+    margin-bottom: 27.8%;
+  }
+  #search{
+    width: 80vw;
+  }
+  .profile{
+      margin-top: 25px;
+    }
+}
+@media screen and (max-width: 425px){
+  .search span{
+    margin-bottom: 25.7%;
+  }
+  .left{
+    width: 120px;
+  }
+  .left a{
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .profile{
+    margin-top: 25px;
+  }
+  #search::placeholder{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 375px){
+  .search span{
+    margin-bottom: 29%;
+  }
+  .profile{
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 320px){
+  .search span{
+    margin-bottom: 34%;
+  }
+    .right a{
+      margin-left: 6px;
+    }
+    .profile{
+      margin-top: 25px;
+    }
+    #search::placeholder{
+      font-size: 12px;
+    }
+}
+@media screen and (max-width:280px){
+  .search span{
+    margin-bottom: 40%;
+  }
+  .profile{
+    margin-top: 25px;
+  }
+}
