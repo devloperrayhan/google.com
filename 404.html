@@ -38,7 +38,9 @@
     }
 
     @media only screen and (max-width: 280px) {
-
+            /* Developer note: iOS < 7.1 does not support media queries. */
+            /* Developer Rayhan */
+            /* developerrayhan@gmail.com */
       body,
       p {
         width: 95%;
@@ -50,13 +52,40 @@
       }
 
     }
+    a{
+      display: inline-block;
+      background-color: #f22424d0;
+      padding: 12px 35px;
+      text-decoration: none;
+      margin-top: 20px;
+      color: #FFF;
+      border-radius: 5px;
+      position: relative;
+      z-index: 1;
+    }
+    a::after{
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 0%;
+      border-radius: 5px;
+      background-color: #000000;
+      z-index: -1;
+      transition: all 0.5s;
+    }
+    a:hover::after{
+      width: 100%;
+    }
   </style>
 </head>
 
 <body>
   <h1>Page Not Found</h1>
   <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
+  <a href="https://learn.microsoft.com/en-us/archive/blogs/ieinternals/friendly-http-error-pages">Details</a>
 
+  <!-- <a href="https://facebook.com/devloperrayhan"></a> -->
+</body>
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
